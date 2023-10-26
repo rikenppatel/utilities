@@ -33,10 +33,11 @@ nav li {
 }
 
 nav a {
-  color: #5a3b3b; /* White text color for links in the header */
   text-decoration: none;
+  color: #7fb153;
   font-size: 1.2em;
 }
+
 
 .container {
   padding: 15px;

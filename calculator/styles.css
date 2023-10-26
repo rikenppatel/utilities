@@ -58,3 +58,16 @@ button.equals {
 button.clear {
   background-color: #e74c3c;
 }
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header nav {
+  float: none;
+}
+
+header h1 {
+  font-size: 2em;
+}
