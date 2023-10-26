@@ -11,8 +11,14 @@ function appendOperator(operator) {
 }
 
 function calculate() {
-  displayValue = eval(displayValue.replace(/ /g, ''));
-  updateDisplay();
+  try {
+    displayValue = eval(displayValue.replace(/ /g, ''));
+    updateDisplay();
+  } catch (error) {
+    displayValue = 'Error';
+    updateDisplay();
+    setTimeout(clearDisplay, 2000);
+  }
 }
 
 function clearDisplay() {

@@ -1,12 +1,22 @@
 #calculator {
   text-align: center;
+  max-width: 300px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
 }
 
 #display {
   width: 100%;
   padding: 10px;
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  font-size: 2em;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: right;
 }
 
 #buttons {
@@ -18,4 +28,33 @@
 button {
   padding: 15px;
   font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+button.operator {
+  background-color: #f39c12;
+}
+
+button.number {
+  background-color: #3498db;
+}
+
+button.double {
+  grid-column: span 2;
+}
+
+button.equals {
+  background-color: #2ecc71;
+}
+
+button.clear {
+  background-color: #e74c3c;
 }
